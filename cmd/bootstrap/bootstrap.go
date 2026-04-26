@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/haramurti/valet-urls-shortener/Internal/infra/database"
-	"github.com/haramurti/valet-urls-shortener/config"
+	"github.com/haramurti/valeth-urls-shortener/Internal/infra/database"
+	"github.com/haramurti/valeth-urls-shortener/config"
 	"gorm.io/gorm"
 )
 

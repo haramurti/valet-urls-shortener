@@ -4,7 +4,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/haramurti/valet-urls-shortener/Internal/app/user/entity"
+	"github.com/haramurti/valeth-urls-shortener/Internal/app/user/entity"
 
 	"gorm.io/gorm"
 )
