@@ -6,6 +6,6 @@ type User struct {
 	ID             string
 	Email          string
 	HashedPassword string
-	createdAt      time.Time
-	deletedAt      *time.Time
+	CreatedAt      time.Time
+	DeletedAt      *time.Time
 }
