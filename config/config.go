@@ -8,7 +8,7 @@ import (
 )
 
 type Config struct {
-	databaseURL string
+	DatabaseURL string
 }
 
 func Load() *Config {
@@ -17,7 +17,7 @@ func Load() *Config {
 	}
 
 	return &Config{
-		databaseURL: mustGetEnv("DATABASE_URL"),
+		DatabaseURL: mustGetEnv("DATABASE_URL"),
 	}
 
 }
