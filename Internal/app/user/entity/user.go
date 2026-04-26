@@ -3,9 +3,9 @@ package entity
 import "time"
 
 type User struct {
-	ID             string
-	Email          string
-	HashedPassword string
-	CreatedAt      time.Time
-	DeletedAt      *time.Time
+	ID             string     `gorm:"type:uuid;primaryKey;default:gen_random_uuid()" json:"id"`
+	Email          string     `gorm:"type:varchar(255);uniqueIndex;not null" json:"email"`
+	HashedPassword string     `gorm:"not null" json:"hashed_password"`
+	CreatedAt      time.Time  `gorm:"not null" json:"created_at"`
+	DeletedAt      *time.Time `gorm:"index" json:"deleted_at"`
 }
