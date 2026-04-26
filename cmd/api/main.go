@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/haramurti/valeth-urls-shortener/cmd/bootstrap"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	app := bootstrap.NewApp()
+
+	log.Fatal(app.Fiber.Listen(":8088"))
 }
