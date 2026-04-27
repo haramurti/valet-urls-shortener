@@ -7,7 +7,7 @@ import (
 
 type UrlRepository interface {
 	Create(url *entity.Url) error
-	FindByUrlId(urlId uuid.UUID) (*entity.Url, error)
-	Update(url *entity.Url) error
-	Delete(url *entity.Url) error
+	FindByShortCode(shortCode string) (*entity.Url, error)
+	FindByUserID(userID uuid.UUID) ([]*entity.Url, error)
+	Delete(urlID uuid.UUID) error
 }

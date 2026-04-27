@@ -9,5 +9,5 @@ import (
 func main() {
 	app := bootstrap.NewApp()
 
-	log.Fatal(app.Fiber.Listen(":8088"))
+	log.Fatal(app.Fiber.Listen(":8098"))
 }
